@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="MozArt Studio — playful, modern digital illustration and vector art portfolio by an independent illustrator and vector designer.">
+        <meta name="theme-color" content="#fffaf1">
+        <meta property="og:title" content="MozArt Studio — Illustration & Vector Art">
+        <meta property="og:description" content="Colorful ideas, bold shapes, and character-led visuals.">
+        <meta property="og:type" content="website">
+        <title>MozArt Studio — Illustration & Vector Art</title>
+        <style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap'); :root { --ink: #191919; --paper: #fffaf1; --pink: #ff5f91; --yellow: #ffd84d; --blue: #5b63ff; --green: #b7ef70; } * { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'DM Sans',sans-serif; } .wrap { width: min(1160px,calc(100% - 36px)); margin: auto; } a { color: inherit; text-decoration: none; } nav { height: 76px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid; } .brand { font: 700 22px 'Space Grotesk'; } .brand span { color: var(--pink); } .links { display: flex; gap: 24px; font-size: 13px; font-weight: bold; } .pill, .btn { border: 2px solid var(--ink); border-radius: 99px; padding: 11px 16px; font-size: 12px; font-weight: bold; display: inline-block; } .hero { padding: 68px 0; display: grid; grid-template-columns: 1.1fr .9fr; gap: 34px; align-items: center; } .tag { background: var(--green); border: 2px solid; border-radius: 99px; padding: 8px 12px; font-size: 10px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; } h1 { font: 700 clamp(55px,8vw,100px)/.92 'Space Grotesk'; letter-spacing: -6px; margin: 24px 0; } h1 em { font-style: normal; color: var(--pink); text-shadow: 3px 3px var(--ink); } .hero p { line-height: 1.8; color: #555; max-width: 520px; } .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; } .btn { box-shadow: 3px 3px var(--ink); } .mainbtn { background: var(--yellow); } .hero-art { height: 360px; background: var(--blue); border: 2px solid; border-radius: 48% 48% 20px 20px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; } .hero-art:before { content: '✳'; position: absolute; left: 20px; top: 16px; font-size: 60px; } .hero-art:after { content: ''; position: absolute; width: 210px; height: 210px; background: var(--yellow); border: 2px solid; border-radius: 50%; right: 20px; top: 25px; } .hero-art img { position: relative; z-index: 1; width: 400; height: 300; object-fit: contain; top: 400; left: 300; right: 300; bottom: 400; } .ticker { background: var(--yellow); border-block: 2px solid; padding: 14px; font: 700 14px 'Space Grotesk'; letter-spacing: 2px; overflow: hidden; white-space: nowrap; } .section { padding: 70px 0; } .heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 25px; } .kicker { font-size: 11px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); } h2 { font: 700 clamp(35px,5vw,56px)/1 'Space Grotesk'; letter-spacing: -3px; margin: 12px 0; } .heading p { max-width: 320px; color: #666; font-size: 13px; line-height: 1.7; } .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; } .filter { background: transparent; border: 1.5px solid; border-radius: 99px; padding: 10px 14px; font-weight: bold; cursor: pointer; } .filter.active, .filter:hover { background: var(--ink); color: white; } .gallery { display: grid; grid-template-columns: repeat(3,1fr); gap: 25px 18px; } .art { width: 100%; height: 270px; border: 2px solid; border-radius: 14px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; cursor: zoom-in; } .work:nth-child(4n+1) .art { background: #ffb8ce; } .work:nth-child(4n+2) .art { background: #d4f2a6; } .work:nth-child(4n+3) .art { background: #bfc5ff; } .work:nth-child(4n) .art { background: #ffe48b; } .art img { width: 100%; height: 100%; object-fit: contain; padding: 14px; transition: .2s; } .work:hover .art img { transform: scale(1.04); } .art span { position: absolute; bottom: 9px; right: 9px; background: var(--yellow); border: 1px solid; border-radius: 99px; padding: 7px 10px; font-size: 11px; font-weight: bold; } .info { display: flex; justify-content: space-between; padding: 12px 2px; } .info b { font-size: 13px; display: block; } .info small { font-size: 11px; color: #777; display: block; margin-top: 5px; } .manifesto { background: var(--pink); border-block: 2px solid; padding: 60px 0; } .manifesto .inner { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; } .manifesto p { line-height: 1.9; font-size: 14px; } .services { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; } .service { padding: 22px; border: 2px solid; border-radius: 15px; background: white; } .service:nth-child(2) { background: var(--green); } .service h3 { font: 700 20px 'Space Grotesk'; } .service p { font-size: 13px; line-height: 1.7; } .contact { background: var(--blue); border-top: 2px solid; padding: 65px 0; } .contact h2 { font-size: clamp(42px,7vw,80px); } .contact p { line-height: 1.8; max-width: 480px; } .contact .btn { background: var(--green); } footer { padding: 22px 0; display: flex; justify-content: space-between; font-size: 11px; font-weight: bold; } .modal { display: none; position: fixed; inset: 0; background: #111e; z-index: 5; align-items: center; justify-content: center; padding: 20px; } .modal.open { display: flex; } .modal img { max-width: 90vw; max-height: 82vh; background: white; } .modal button { position: absolute; right: 18px; top: 18px; padding: 10px; border-radius: 99px; background: var(--yellow); border: 2px solid; } .modal p { position: absolute; bottom: 10px; color: white; } @media (max-width:760px){ .hero {  grid-template-columns: 1fr;  padding: 48px 0; }  .hero-art {  height: 300px; }  .gallery {  grid-template-columns: repeat(2,1fr);  gap: 20px 12px; }  .art {  height: 210px; }  .heading {  display: block; }  .manifesto .inner {  grid-template-columns: 1fr;  gap: 8px; } } @media (max-width:500px){ .links {  gap: 10px;  font-size: 11px; }  .hero h1 {  letter-spacing: -4px; }  .art {  height: 155px; }  .art img {  padding: 7px; }  .info b {  font-size: 11px; }  .section {  padding: 48px 0; }  .services {  grid-template-columns: 1fr; }  footer {  flex-direction: column;  gap: 8px; } }</style>
+    </head>
+    <body>
+        <header>
+            <nav class="wrap">
+                <a class="brand" href="#">Moz<span style="color: #407add;">Art</span> Studio ✳</a>
+                <div class="links">
+                    <a href="#work">Karya</a>
+                    <a href="#about">Tentang</a>
+                    <a href="#services">Keahlian</a>
+                </div>
+                <a class="pill" href="#contact">Let's talk ↗</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero wrap">
+                <div>
+                    <span class="tag">Illustration &middot; Vector&nbsp;&middot; LOGO</span>
+                    <h1>Creative<br><em>Illustration.</em><br></h1>
+                    <h1>&amp;&nbsp;<em>Vector Art.</em><br></h1>
+                    <p>MozArt Studio offers digital illustrations, vector art, character designs, logos, and creative mascots to help brands stand out with a unique identity and distinct character.</p>
+                    <div class="buttons">
+                        <a class="btn mainbtn" href="#work">Explore my work &darr;</a>
+                        <a class="btn" href="#contact">Start a project ↗</a>
+                    </div>
+                </div>
+                <div class="hero-art">
+                    <img alt="Karya ilustrasi pilihan" onerror="this.style.display='none'" src="Creative%20Studio%20Illustration%20Collage.png" width="400" height="600">
+                </div>
+            </section>
+            <div class="ticker">✳ DIGITAL ILLUSTRATION　 ✳ VECTOR ART　 ✳ COLOR OUTSIDE THE LINES　 ✳ DIGITAL ILLUSTRATION　 ✳ VECTOR ART</div>
+            <section class="section wrap" id="work">
+                <div class="heading">
+                    <div>
+                        <div class="kicker">01 / Selected work</div>
+                        <h2>Things I've made<span style="color:var(--pink)">.</span></h2>
+                    </div>
+                    <p>A collection of selected works that combine an exploration of form, color, and visual identity.</p>
+                </div>
+                <div class="filters">
+                    <button class="filter active" data-filter="Semua">All work</button>
+                    <button class="filter" data-filter="Ilustrasi Digital">Digital Illustration</button>
+                    <button class="filter" data-filter="Vector Art">Vector Art</button>
+                </div>
+                <div class="gallery">
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/rw06-royal-campaka.png','Royal Campaka — Visual Identity')">
+                            <img src="assets/rw06-royal-campaka.png" alt="Royal Campaka — Visual Identity" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Royal Campaka — Visual Identity</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>01</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Ilustrasi Digital">
+                        <button class="art" onclick="viewArt('assets/moya-cakery-illustration.jpg','Moya Cakery — Illustration')">
+                            <img src="assets/moya-cakery-illustration.jpg" alt="Moya Cakery — Illustration" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Moya Cakery — Illustration</b>
+                                <small>Ilustrasi Digital</small>
+                            </div>
+                            <small>02</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/pawon-weunaak.png','Pawon Weunaak — Logo Design')">
+                            <img src="assets/pawon-weunaak.png" alt="Pawon Weunaak — Logo Design" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Pawon Weunaak — Logo Design</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>03</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/alfa-natura-horizontal.png','Alfa Natura — Brand Mark')">
+                            <img src="assets/alfa-natura-horizontal.png" alt="Alfa Natura — Brand Mark" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Alfa Natura — Brand Mark</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>04</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/alfa-natura-emblem.png','Alfa Natura — Emblem')">
+                            <img src="assets/alfa-natura-emblem.png" alt="Alfa Natura — Emblem" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Alfa Natura — Emblem</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>05</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Ilustrasi Digital">
+                        <button class="art" onclick="viewArt('assets/moya-cakery-mascot.jpeg','Moya Cakery — Character Art')">
+                            <img src="assets/moya-cakery-mascot.jpeg" alt="Moya Cakery — Character Art" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Moya Cakery — Character Art</b>
+                                <small>Ilustrasi Digital</small>
+                            </div>
+                            <small>06</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/moya-cakery-wordmark.jpg','Moya Cakery — Wordmark')">
+                            <img src="assets/moya-cakery-wordmark.jpg" alt="Moya Cakery — Wordmark" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Moya Cakery — Wordmark</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>07</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/alfa-environment-logo.png','Alfa Enviro — Logo')">
+                            <img src="assets/alfa-environment-logo.png" alt="Alfa Enviro — Logo" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Alfa Enviro — Logo</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>08</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/alfa-environment-symbol.png','Alfa Enviro — Symbol')">
+                            <img src="assets/alfa-environment-symbol.png" alt="Alfa Enviro — Symbol" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Alfa Enviro — Symbol</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>09</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/alfa-environment-full.png','Alfa Enviro — Brand Identity')">
+                            <img src="assets/alfa-environment-full.png" alt="Alfa Enviro — Brand Identity" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Alfa Enviro — Brand Identity</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>10</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/alfa-haji-umrah.png','Alfa Haji &amp; Umrah — Identity')">
+                            <img src="assets/alfa-haji-umrah.png" alt="Alfa Haji &amp; Umrah — Identity" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Alfa Haji &amp; Umrah — Identity</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>11</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/puna-kawan-banua.png','Puna Kawan Banua — Logo')">
+                            <img src="assets/puna-kawan-banua.png" alt="Puna Kawan Banua — Logo" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Puna Kawan Banua — Logo</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>12</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Vector Art">
+                        <button class="art" onclick="viewArt('assets/banua-alam-makmur.png','Banua Alam Makmur — Logo')">
+                            <img src="assets/banua-alam-makmur.png" alt="Banua Alam Makmur — Logo" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Banua Alam Makmur — Logo</b>
+                                <small>Vector Art</small>
+                            </div>
+                            <small>13</small>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="Ilustrasi Digital">
+                        <button class="art" onclick="viewArt('assets/peta-lokasi.png','Indonesia — Map Illustration')">
+                            <img src="assets/peta-lokasi.png" alt="Indonesia — Map Illustration" loading="lazy">
+                            <span>Explore ↗</span>
+                        </button>
+                        <div class="info">
+                            <div>
+                                <b>Indonesia — Map Illustration</b>
+                                <small>Ilustrasi Digital</small>
+                            </div>
+                            <small>14</small>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="manifesto" id="about">
+                <div class="wrap inner">
+                    <div>
+                        <div class="kicker">02 / About the artist</div>
+                        <h2>Good design.<br>Good energy.<br>Great color.</h2>
+                    </div>
+                    <div>
+                        <p>MozArt Studio is the portfolio of an illustrator and vector designer who translates ideas into expressive visuals. From digital illustrations to bold vector forms, every piece serves as an opportunity to tell a story through color and character.</p>
+                        <p>This website serves as a space to showcase selected works, creative explorations, and collaborations.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section wrap" id="services">
+                <div class="heading">
+                    <div>
+                        <div class="kicker">03 / Creative focus</div>
+                        <h2>What I create.</h2>
+                    </div>
+                    <p>Focuses on digital illustrations and vector-based visuals and icons.</p>
+                </div>
+                <div class="services">
+                    <article class="service">
+                        <h3>✳ Digital Illustration</h3>
+                        <p>Character-rich illustrations for digital content and visual storytelling.</p>
+                    </article>
+                    <article class="service">
+                        <h3>✦ Vector Art</h3>
+                        <p>Clean forms, bold colors, and artwork that is flexible for various media.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="contact" id="contact" href="mailto:mozartpourvous@gmail.com">
+                <div class="wrap">
+                    <div class="kicker">04 / Let's make something</div>
+                    <h2>Got an idea?<br>Let's color it in.</h2>
+                    <p>Open to collaborations and creative projects. Share your ideas, and let&rsquo;s bring them to life visually.</p>
+                    <a class="btn" href="mailto:mozartpourvous@gmail.com">Email me ↗</a>
+                    <a class="btn" href="https://wa.me/6282380904261">Chat me ↗</a>
+                </div>
+            </section>
+        </main>
+        <footer class="wrap">
+            <span>© 2026 MozArt Studio / Creative Portfolio</span>
+            <span>Made with color & curiosity ✳</span>
+        </footer>
+        <div class="modal" id="modal">
+            <button onclick="closeArt()">Close ✕</button>
+            <img id="big" alt="">
+            <p id="cap"></p>
+        </div>
+        <script>document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.work').forEach(w=>w.style.display=b.dataset.filter==='Semua'||w.dataset.cat===b.dataset.filter?'':'none')});function viewArt(src,title){document.getElementById('big').src=src;document.getElementById('cap').textContent=title;document.getElementById('modal').classList.add('open')}function closeArt(){document.getElementById('modal').classList.remove('open')}document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')closeArt()};document.onkeydown=e=>{if(e.key==='Escape')closeArt()}</script>
+    </body>
+</html>
